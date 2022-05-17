@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.MyApplication.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MyApplication.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/JokeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/GetJokeBtn"
+        android:layout_centerHorizontal="true"
+        android:minWidth="300dp"
+        android:text="@string/Joke"
+        android:textColor="@color/white"
+        android:minHeight="150dp" />
+
+    <Button
+        android:id="@+id/GetJokeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/btnText" />
+</RelativeLayout>
